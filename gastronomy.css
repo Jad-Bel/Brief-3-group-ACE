@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Nunito';
+}
+header{
+    background-color: #EDE0D4;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    gap: 2vw;
+}
+.header_logo{
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
+}
+.searchbarInput{
+    width: 15vw;
+}
+
+.header_navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    list-style-type: none;
+}
+.header_navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.searchbarInput{
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 20vw;
+    border-color: transparent;
+}
+.hamburger{
+    display: none;
+}
+.search_icon{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .header_navbar{
+        display: none;
+    }
+    .searchbarInput{
+        display: none;
+    }
+    .hamburger{
+        position: relative;
+        width: 8vw;
+        
+        display: block;
+        order: -1;
+    }
+    .hamburger summary{ 
+        font-size: 8vw;
+        display: flex;
+        cursor: pointer;
+
+    }
+    .mobile_menu ul{
+        display: flex;
+        gap: 5vw;
+        padding-left: 10vw;
+        list-style: none;
+        padding-top: 10vw;
+    }
+    .mobile_menu a{
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: black;
+    }
+    .header_logo{
+        order: 1;
+        height: 100%;
+        width: 40vw;
+    }
+    .search_icon{
+        display: block;
+        width: 5vw;
+        height: 5vh;
+        order: 2;
+    }
+    header{
+        height: auto;
+        padding: 2vh 5vw;
+    }
+}

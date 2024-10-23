@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href="gastronomy.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <!-- Desktop part -->
-        <div class="header_logo">
-            <img src="/images/logo.png" alt="visit Morocco logo">
-        </div>
+        <img class="header_logo" src="/image/Logo1.png" alt="visit Morocco logo">
         <nav class="header_navbar">
             <ul>
                 <li>
@@ -27,16 +27,21 @@
                 </li>
             </ul>
         </nav>
-        <div class="header_searchBar">
-            <input type="text" placeholder="Search...">
-        </div>
+        <input class="searchbarInput" type="text" placeholder="Search...">
         <!-- mobile part -->
-        <div class="hamburger">
-            <span>&#9776;</span>
-        </div>
-        <div class="mobile_menu">
-            
-        </div>
+        <details class="hamburger">
+            <summary>&#9776;</summary>
+        <!-- after clicking the hamburger -->
+            <nav class="mobile_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Gastronomy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </details>
+        <img class="search_icon" src="/image/search-icon.svg" alt="Search">
     </header>
 </body>
 </html>
