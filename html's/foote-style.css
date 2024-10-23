@@ -1,0 +1,37 @@
+.footer{
+    
+    background-color:  #D9D9D9;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 112%;
+    color: black;
+    
+    
+
+}
+.logo::after,
+.logo::before{
+    content: "";
+    flex: 1;
+    
+    border-top: 1px solid black;
+    
+}
+.copyright{
+   text-align: center;
+   padding-top: 5%;
+}
+
+.spcfoter{
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
