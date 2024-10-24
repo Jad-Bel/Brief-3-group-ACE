@@ -258,4 +258,30 @@
     .spcfot3{
     grid-column: 3/4;
     }
+    .hamburger{
+        position: relative;
+        width: 8vw;
+        
+        display: block;
+        order: -1;
+    }
+    .hamburger summary{ 
+        margin-left: -10vh;
+        font-size: 8vw;
+        display: flex;
+        cursor: pointer;
+
+    }
+    .mobile_menu ul{
+        display: flex;
+        gap: 5vw;
+        padding-left: 10vw;
+        list-style: none;
+        padding-top: 10vw;
+    }
+    .mobile_menu a{
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: black;
+    }
 }
