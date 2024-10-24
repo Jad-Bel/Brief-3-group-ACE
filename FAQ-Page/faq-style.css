@@ -5,3 +5,35 @@ body{
 
  /* Css de page FAQ */
 
+ .faq-page{
+    width: 100vw;
+    max-height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-faq{
+    width: 70vw;
+    color: #EDE0D4;
+    text-align: center;
+    font-size: 6VW;
+    margin: .64vw;
+}
+
+.faq-page .plan-questions{
+    width: 72vw;
+    height: 30vw;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+
+
+
+      /* Css de page contact us */
+
+
