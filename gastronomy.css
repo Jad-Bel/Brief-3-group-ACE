@@ -10,7 +10,7 @@ body{
 header{
     background-color: #EDE0D4;
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,10 @@ header{
     object-fit: contain;
 }
 .searchbarInput{
-    width: 15vw;
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 20vw;
+    border-color: transparent;
 }
 
 .header_navbar ul{
@@ -50,8 +53,54 @@ header{
 .search_icon{
     display: none;
 }
+.intro_gastronomy{
+    width: 100vw;
+    min-height: 85vh;
+    background-image: url('/image/gastronomyMain.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container_gastronomy{
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+}
+.container_gastronomy span{
+    font-size: 8vw;
+    color: #EDE0D4;
+    font-family: 'Aclonica';
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+.containerDescription_gastronomy{
+    width: 90%;
+    max-width: 1000px;
+    background-color: #97633DBF;
+    padding: 2vw;
+    display: flex;             
+    align-items: center;
+    justify-content: center;
+}
+.containerDescription_gastronomy p{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.6;
+}
 
 @media (max-width:768px) {
+    /* header mobile */
     .header_navbar{
         display: none;
     }
@@ -61,7 +110,6 @@ header{
     .hamburger{
         position: relative;
         width: 8vw;
-        
         display: block;
         order: -1;
     }
@@ -97,5 +145,25 @@ header{
     header{
         height: auto;
         padding: 2vh 5vw;
+    }
+    /* first section mobile */
+    .intro_gastronomy{
+        height: auto;
+        max-height: 85vh;
+        background-size:cover;
+        background-position: center top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        padding: 5vh 0;
+    }
+    .container_gastronomy span{
+        font-size: 12vw;
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    .containerDescription_gastronomy{
+        max-height: 30vh;
+    }
+    .containerDescription_gastronomy p{
+        font-size: 0.8em;
     }
 }
