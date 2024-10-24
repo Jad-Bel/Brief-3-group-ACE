@@ -11,52 +11,113 @@
 }
 body{
     width: 100%;
-    background-image: url(image/Home-Page-Intro.png);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
 }
-.nav-bar{
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.386);
+
+/* header */
+
+header{
+    font-family: 'nunito';
+    background-color: #EDE0D4;
     width: 100%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 3vw;
+    gap: 2vw;
+}
+.header_logo{
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
+}
+.searchbarInput{
+    width: 15vw;
 }
 
-
-.icon ul{
-    border: 1px solid blue;
-    font-family: 'nunito';
+.header_navbar ul{
     display: flex;
-    width: 550Px;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    list-style-type: none;
 }
-.icon li{
-    list-style: none;
-}
-.icon li a{
-    font-size: larger;
-    color: black;
+.header_navbar ul li a{
     text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
 }
-.search{
-    padding: 10px;
+
+.searchbarInput{
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 20vw;
+    border-color: transparent;
 }
-.search input{
-    width: 250px;
-    padding: 10px;
-    margin-right: 40px;
-    height: 30px;
-    border-radius: 40px;
-    outline: none;
-    border: none;
-    background-color: #ffffffd3;
+.hamburger{
+    display: none;
 }
+.search_icon{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .header_navbar{
+        display: none;
+    }
+    .searchbarInput{
+        display: none;
+    }
+    .hamburger{
+        position: relative;
+        width: 8vw;
+        
+        display: block;
+        order: -1;
+    }
+    .hamburger summary{ 
+        font-size: 8vw;
+        display: flex;
+        cursor: pointer;
+
+    }
+    .mobile_menu ul{
+        display: flex;
+        gap: 5vw;
+        padding-left: 10vw;
+        list-style: none;
+        padding-top: 10vw;
+    }
+    .mobile_menu a{
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: black;
+    }
+    .header_logo{
+        order: 1;
+        height: 100%;
+        width: 40vw;
+    }
+    .search_icon{
+        display: block;
+        width: 5vw;
+        height: 5vh;
+        order: 2;
+    }
+    header{
+        height: auto;
+        padding: 0vh 5vw;
+    }
+}
+
+/* 1st section */
+.introduction-content {
+    width: 100%;
+    background-image: url(image/Home-Page-Intro.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
 
 .introduciton-title{
     color: #e6ccb2f1;
@@ -71,3 +132,93 @@ body{
 .title{
         text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+    .introduction-content{
+        margin: -10px 0;
+        width: 100%;
+        height: auto;
+
+    }
+    .introduciton-title{
+        font-size: 50px;
+    }
+}
+
+/* 2nd section */
+.about-container {
+    background: whitesmoke;
+    width: 100%;
+    height: 80vh;
+}
+
+
+.about-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 10px;
+}
+.title-box {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nunito';
+    background-color:white ;
+    color: #AEAEAE;
+    border: 2px solid #EDE0D4;
+    border-radius: 30px;
+}
+
+.about-title {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.about-heading {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    display: flex;
+    justify-items: center;
+    font-size: 45px;
+    font-weight: medium;    
+    font-family: 'nunito';
+    border: 1px solid black;
+}
+
+
+.about-description {
+    grid-column: 3/3;
+    grid-row: 3/2;
+    width: 70%;
+    color: #656565;
+    font-family: 'nunito';
+    font-size: 15px;
+    border: 1px solid pink;
+}
+
+.about-btn {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.about-btn button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nunito';
+    background-color:#DDB892 ;
+    color: black;
+    border: 2px solid #EDE0D4;
+    border-radius: 30px;
+}
+
+
