@@ -16,6 +16,9 @@ header{
     align-items: center;
     padding: 0 3vw;
     gap: 2vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 .header_logo{
     width: 20vw;
@@ -55,15 +58,16 @@ header{
 }
 .intro_gastronomy{
     width: 100vw;
-    min-height: 85vh;
+    height: 100vh;
+    margin-top: 15vh;
     background-image: url('/image/gastronomyMain.jpg');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: inherit
 }
 .container_gastronomy{
     width: 90%;
@@ -73,7 +77,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20vh;
+    gap: 15vh;
 }
 .container_gastronomy span{
     font-size: 8vw;
@@ -98,6 +102,67 @@ header{
     font-size: 1em;
     line-height: 1.6;
 }
+/* slide part */
+.slider_container{
+    width: 100vw;
+    height: 100vh;
+}
+.spacingSliders{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders span{
+    color: white;
+    letter-spacing: 2vw;
+}
+.slider-wrapper{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    aspect-ratio: 1/1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slider img{
+    flex: 1 0 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1vw;
+    position: absolute;
+    bottom: 1vw;
+    left: 85%;
+    padding: 1vw;
+    border-radius: 3vw;
+}
+.slider-nav a{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: background-color 0.3s;
+}
+.slider-nav a:hover{
+    background-color: white;
+}
+
 
 @media (max-width:768px) {
     /* header mobile */
