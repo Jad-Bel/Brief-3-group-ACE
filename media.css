@@ -1,0 +1,83 @@
+@media(max-width:412px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 8vh;
+        width: 100%;
+    }
+
+    .logo-container img {
+        height: 130px;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    body {
+        background-image: url(/img_mobail/Design\ sans\ titre\ \(5\).png);
+    }
+
+    .destination-header {
+        height: 65vh;
+        font-size: 40px;
+    }
+    .hamburger summary{ 
+        font-size: 8vw;
+        display: flex;
+        cursor: pointer;
+
+    }
+    .mobile_menu ul{
+        display: flex;
+        gap: 5vw;
+        padding-left: 10vw;
+        list-style: none;
+        padding-top: 10vw;
+    }
+    .mobile_menu a{
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .section-marrakech {
+        border: none;
+        width: 100%;
+        height: 60vh;
+        background-image: url(/img_mobail/Design\ sans\ titre\ \(6\).png);
+    }
+
+    .city-header-marrakech {
+        width: 30vh;
+    }
+
+    .city-header-marrakech div {
+        font-size: 9px;
+        height: 3vh;
+        width: 10vh;
+    }
+
+    .description-marrakech {
+        padding: 1vh;
+        padding: 3vh;
+        font-size: 1.2vh;
+        width: 35vh;
+        height: 25vh;
+    }
+
+    .learn-more {
+        width: 30vh;
+        margin-top: 20px;
+    }
+    .learn-more div {
+        font-size: 10px;
+        height: 3vh;
+        width: 10vh;
+    }
+
+}
