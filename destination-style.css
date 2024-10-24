@@ -298,4 +298,13 @@ body {
     margin-top: 20px;
 
 }
-
+.learn-more div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 20vh;
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 1px solid #E6CCB2;
+    border-radius: 2em;
+}
