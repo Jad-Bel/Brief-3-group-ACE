@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
     box-sizing: border-box;
 
 }
@@ -31,6 +31,12 @@ header{
     width: 20vw;
     height: auto;
     object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+
+.header_logo:hover {
+    transform: scale(1.1);
+    margin: 5px;
 }
 .searchbarInput{
     width: 15vw;
@@ -45,7 +51,13 @@ header{
 .header_navbar ul li a{
     text-decoration: none;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.header_navbar ul li a:hover {
+    transform: scale(1.2);
+    margin: 5px;
 }
 
 .searchbarInput{
@@ -54,6 +66,7 @@ header{
     border-radius: 20vw;
     border-color: transparent;
 }
+
 .hamburger{
     display: none;
 }
@@ -113,6 +126,10 @@ header{
 /* 1st section */
 .introduction-content {
     width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(image/Home-Page-Intro.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -124,7 +141,7 @@ header{
 .introduciton-title{
     color: #e6ccb2f1;
     display: flex;
-    height: 90vh;
+    height: 65vh;
     justify-content: center;
     align-items: center;
     font-size: 90px;
@@ -136,13 +153,16 @@ header{
 }
 @media (max-width: 768px) {
     .introduction-content{
-        margin: -10px 0;
         width: 100%;
-        height: auto;
-
+        height: 100%;
+        background-image: url(image/Section1-v-mobile.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center;
     }
     .introduciton-title{
-        font-size: 50px;
+        font-size: 3rem;
     }
 }
 
@@ -213,6 +233,7 @@ header{
     align-items: center;
 }
 
+
 .about-btn button {
     width: 125px;
     height: 40px;
@@ -224,6 +245,11 @@ header{
     color: black;
     border: 2px solid #EDE0D4;
     border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-btn button:hover {
+    background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -236,7 +262,6 @@ header{
         align-items: center;
         justify-content: center;
         gap: 30px;
-        border: 1px solid red;
     }
     .about-title {
         width: 100%;
@@ -298,11 +323,15 @@ a {
     align-items: center;
     text-decoration: none;
     color: #cdcdcd;
-    
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .btn-container:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background-color: rgba(168, 121, 90, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -324,7 +353,6 @@ a {
         height: 50rem;
         padding: 20px;
         text-align: center;
-        border: 1px solid blue;
     }
     .traditional-content h4 {
         font-size: 3rem;
@@ -348,7 +376,6 @@ a {
 }
 
 .explore-container {
-    border: 1px solid red;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -356,34 +383,29 @@ a {
 }
 
 .explore-content {
-    width: 80%;
+    width: 90%;
     height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid blue;
 }
 
 .explore-title {
     font-family: 'aclonica';
     font-size: 9rem;
     z-index: -1;
+    color: #AEAEAE;
 }
 
 .explore-container {
-    border: 1px solid green;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .img-content {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -392,7 +414,6 @@ a {
 
 
 .city-content {
-    border: 1px solid red;
     width: 50%;
     height: 100%;
     background-image: url(image/city-img.png);
@@ -408,7 +429,6 @@ a {
 }
 
 .nature-content {
-    border: 1px solid blue;
     width: 45%;
     height: 100%;
     background-image: url(image/nature-img.png);
@@ -424,16 +444,120 @@ a {
 
 .nature-content:hover {
     transform: scale(1.1);
-    margin: 5px;
+    margin-left: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 .city-content:hover {
     transform: scale(1.1);
-    margin: 5px;
+    margin-right: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .explore-container span {
     color: white;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .explore-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+    }
+    .explore-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .explore-title {
+        font-size: 3rem;
+    }
+    .img-content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .city-content {
+        background-image: url(image/city-img-v-mobile.png);
+        font-size: 2rem;
+        height: 75%;
+    }
+    .nature-content {
+        background-image: url(image/nature-img-v-mobile.png);
+        font-size: 2rem;
+        height: 75%;
+    }
+}
+
+/* footer */
+
+.footer{
+    background-color:  #D9D9D9;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    overflow-x: hidden;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.footer_logo img{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 15vw;
+    height: auto;
+}
+.footer_logo::after,
+.footer_logo::before{
+    content: "";
+    flex: 1;
+
+    border-top: 1px solid black;
+
+}
+.spcfoter{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+}
+.ul_container ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ul_container ul li{
+    font-family: 'nunito';
+    font-size: 1.2rem;
+}
+.copyright{
+    font-family: 'nunito';
+    text-align: center;
+    padding: 2vw 2vh;
+ }
+.copyright p{
+    font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+    .ul_container ul li{
+        font-family: 'nunito';
+        font-size: 0.6rem;
+    }
+    .spcfoter{
+        display: flex;
+        justify-content: space-around;
+        height: 10rem;
+    }
+    .copyright p{
+        font-size: 0.3rem;
+        font-weight: bold;
+    }
 }
