@@ -70,6 +70,7 @@ header{
     align-items: center;
     position: inherit
 }
+
 .container_gastronomy{
     width: 90%;
     max-width: 1200px;
@@ -108,7 +109,7 @@ header{
     width: 100vw;
     height: 80vh;
 }
-.spacingSliders{
+.spacingSliders1{
     width: 100%;
     height: 20vh;
     background-image: url('/image/spacingPic.png');
@@ -121,7 +122,33 @@ header{
     font-size: 4vw;
     letter-spacing: 0.5vw;
 }
-.spacingSliders span{
+.spacingSliders2{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic2.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders3{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic3.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders1 span,.spacingSliders2 span{
     color: white;
     letter-spacing: 2vw;
 }
@@ -177,7 +204,7 @@ header{
     }
     /* first section mobile */
     .intro_gastronomy{
-        margin-top: 10vh;
+        margin-top: 20vh;
         height: auto;
         max-height: 85vh;
         background-size:cover;
@@ -187,7 +214,7 @@ header{
         padding: 5vh 0;
     }
     .container_gastronomy span{
-        margin-top: 10vh;
+        margin-top: 20vh;
         font-size: 12vw;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
     }
