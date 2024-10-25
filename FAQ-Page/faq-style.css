@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
+    font-family: 'Nunito';
+    overflow-x: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -126,19 +128,19 @@ header{
 
     .faq-page{
         width: 100vw;
-        max-height: 100vw;
-        margin-top: 15vw;
+        margin-top: 17vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .titre-faq{
+    .titre-page {
         width: 70vw;
         color: #EDE0D4;
         text-align: center;
-        font-size: 8vw;
+        font-size: 6vw;
         margin: .64vw;
+        font-family: 'Aclonica';
     }
 
     .faq-page .plan-questions{
@@ -175,7 +177,6 @@ header{
   
     .faq-page details{
         width: 72vw;
-        /* transition: all 2s ease-out; */
     }
 
     .faq-page .plan-questions summary{
@@ -279,10 +280,9 @@ header{
         .faq-page .plan-questions{
             width: 64vw; 
         }
-
         
         .faq-page{
-            margin-top: 25vw;
+            margin-top: 28vw;
         }
         .contact-page .form-contact{
             background-color: white;
@@ -305,4 +305,54 @@ header{
 
     }
 
+    /*  Css de footer  */
+
+    .footer{
+        background-color:  #D9D9D9;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 1%;
+        overflow-x: hidden;
+    }
+    .footer_logo{
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    .footer_logo img{
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 20vw;
+        height: auto;
+    }
+    .footer_logo::after,
+    .footer_logo::before{
+        content: "";
+        flex: 1;
+    
+        border-top: 1px solid black;
+    
+    }
+    .spcfoter{
+        display: flex;
+        justify-content: space-around;
+        height: 40vh;
+    }
+    .ul_container ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ul_container ul li{
+        font-size: 1.8vw;
+    }
+    .copyright{
+        text-align: center;
+        padding: 2vw 2vh;
+     }
+    .copyright p{
+        font-size: 1vw;
+    }
+     
    
