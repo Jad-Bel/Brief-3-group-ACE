@@ -25,7 +25,14 @@ header{
     width: 13vw;
     height: auto;
     object-fit: contain;
+    transition: all 0.2s ease;
 }
+
+.header_logo:hover {
+    transform: scale(1.2);
+    margin: 0 5px;
+}
+
 .searchbarInput{
     width: 20vw;
     padding: 2vh 2vw;
@@ -43,6 +50,15 @@ header{
     text-decoration: none;
     color: black;
     font-size: 1.5vw;
+}
+
+.header_navbar ul li{
+    transition: all 0.3s ease-out;
+}
+
+.header_navbar ul li:hover {
+    transform: scale(1.2);
+    padding: 0 7px;
 }
 
 .searchbarInput{
@@ -368,7 +384,7 @@ input[type="radio"] {
 .footer_logo img{
     margin-left: 4%;
     margin-right: 4%;
-    width: 20vw;
+    width: 12.5vw;
     height: auto;
 }
 .footer_logo::after,
@@ -391,7 +407,7 @@ input[type="radio"] {
     justify-content: space-around;
 }
 .ul_container ul li{
-    font-size: 1.8vw;
+    font-size: 1.15rem;
 }
 .copyright{
     text-align: center;

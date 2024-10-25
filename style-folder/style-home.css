@@ -51,10 +51,13 @@ header{
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+}
+
+.header_navbar ul li {
     transition: all 0.2s ease-in-out;
 }
 
-.header_navbar ul li a:hover {
+.header_navbar ul li:hover {
     transform: scale(1.2);
     margin: 5px;
 }
