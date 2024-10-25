@@ -16,6 +16,7 @@ body{
 /* header */
 
 header{
+    position: sticky;
     font-family: 'nunito';
     background-color: #EDE0D4;
     width: 100%;
@@ -113,7 +114,7 @@ header{
 .introduction-content {
     width: 100%;
     background-image: url(image/Home-Page-Intro.png);
-    background-size: auto 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
@@ -337,4 +338,102 @@ a {
         align-items: center;
         text-align: center;
     }
+}
+
+/* 4th section */
+
+.explore-section  {
+    height: 50rem;
+    width: 100%;
+}
+
+.explore-container {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.explore-title {
+    font-family: 'aclonica';
+    font-size: 9rem;
+    z-index: -1;
+}
+
+.explore-container {
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.city-content {
+    border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    background-image: url(image/city-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    font-size: 75px;
+    font-family: 'aclonica';
+    color: white;
+    transition: all 0.2s ease-out
+
+}
+
+.nature-content {
+    border: 1px solid blue;
+    width: 45%;
+    height: 100%;
+    background-image: url(image/nature-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    font-size: 75px;
+    font-family: 'aclonica';
+    color: white;
+    transition: all 0.2s ease-out
+}
+
+.nature-content:hover {
+    transform: scale(1.1);
+    margin: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+.city-content:hover {
+    transform: scale(1.1);
+    margin: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.explore-container span {
+    color: white;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
