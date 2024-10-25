@@ -66,8 +66,10 @@ header{
 .search_icon{
     display: none;
 }
+
+/* header mobile */
+
 @media (max-width:768px) {
-    /* header mobile */
     .header_navbar{
         display: none;
     }
@@ -80,6 +82,11 @@ header{
         display: block;
         order: -1;
     }
+
+    .hamburger[open] summary{
+        margin-top: 12vh;
+    }
+
     .hamburger summary{ 
         font-size: 8vw;
         display: flex;
@@ -151,12 +158,14 @@ header{
 
     }
 
+
     .faq-page .Question{
         padding: 3vw 0 2vw;
         border-bottom: 0.2vw solid #edcbab;
         box-shadow: 0 1px #b18f6e;
         display: flex;
         justify-content: space-between;
+
         
     }
 
@@ -164,9 +173,21 @@ header{
         background-color: #000;
     }
   
+    .faq-page details{
+        width: 72vw;
+        /* transition: all 2s ease-out; */
+    }
+
     .faq-page .plan-questions summary{
         cursor: pointer;
         list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Question details[open] i{
+        scale: -1;
     }
 
 
@@ -236,7 +257,6 @@ header{
                 align-items: flex-end;
                 grid-column: 2;
         }
-            
     }
 
     
@@ -257,10 +277,13 @@ header{
 
 
         .faq-page .plan-questions{
-            width: 64vw;   
-
+            width: 64vw; 
         }
 
+        
+        .faq-page{
+            margin-top: 25vw;
+        }
         .contact-page .form-contact{
             background-color: white;
             width: 64vw;
