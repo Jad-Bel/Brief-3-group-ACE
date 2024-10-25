@@ -1,8 +1,13 @@
 # VisitMorocco
 
-Bienvenue sur **VisitMorocco**, un projet web développé en collaboration avec l'Office National du Tourisme Marocain et la startup CodeShögun. Ce site a pour but de mettre en avant les destinations uniques, la diversité culturelle et les beautés naturelles du Maroc, offrant aux touristes des informations essentielles et des outils pour planifier leurs voyages.
+Bienvenue sur **VisitMorocco**, un projet web développé en collaboration avec l'Office National du Tourisme Marocain et la startup CodeShögun. Ce site a pour but de promouvoir les destinations uniques, la diversité culturelle, et les beautés naturelles du Maroc, offrant aux touristes des informations essentielles et des outils pour planifier leurs voyages.
 
----
+## Liens du projet
+
+- **Présentation du projet** : [Canva Presentation](https://www.canva.com/design/DAGUkatx9HQ/r7JkCd0GXn9FRC_FaTgOVw/edit?utm_content=DAGUkatx9HQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- **Site web déployé (Vercel)** : [VisitMorocco on Vercel](https://brief-3-group-ace-ceu2.vercel.app/index.html)
+- **Site web déployé (GitHub Pages)** : [VisitMorocco on GitHub Pages](https://jad-bel.github.io/Brief-3-group-ACE/)
+- **Design final du site web (Figma)** : [Figma Design](https://www.figma.com/design/JUR4CvqxPflFa16MTYHIuB/Untitled?node-id=0-1&node-type=canvas&t=HjrrK60zILoJUmz4-0)
 
 ## Table des Matières
 1. [Contexte du Projet](#contexte-du-projet)
@@ -19,61 +24,48 @@ Bienvenue sur **VisitMorocco**, un projet web développé en collaboration avec 
 
 ## Contexte du Projet
 
-L'Office National du Tourisme a confié à CodeShögun la création d'un site web pour promouvoir les attractions touristiques du Maroc, permettant aux utilisateurs d'explorer les régions, de planifier des voyages et d'accéder à des informations utiles. L'objectif principal est de concevoir une plateforme moderne, intuitive, et visuellement attrayante qui reflète la diversité culturelle et naturelle du Maroc.
+L'Office National du Tourisme a confié à CodeShögun la création d'un site web pour promouvoir les attractions touristiques du Maroc, permettant aux utilisateurs d'explorer les régions, de planifier des voyages et d'accéder à des informations utiles. L'objectif principal est de concevoir une plateforme moderne, intuitive et visuellement attrayante qui reflète la diversité culturelle et naturelle du Maroc.
 
 ## Technologies Utilisées
 
 - **HTML5** et **CSS3** pour la structure et le style du site
-- **Design Responsive** avec **@media queries**
+- **Responsive Design** avec **@media queries**
 - **GitHub Projects** pour la gestion des tâches et la planification
-- **GitHub Pages** ou **Vercel** pour le déploiement
+- **Vercel** et **GitHub Pages** pour le déploiement
 - Optimisation pour **SEO** et validation **W3C** pour l'accessibilité
 
 ## User Stories
 
-- **Tâches de Conception** :
-  - Définir le zoning des pages (Accueil, Destinations, Gastronomie, FAQ).
-  - Créer des wireframes pour structurer les pages.
-  - Concevoir les maquettes pour les écrans de bureau et mobiles.
-  - Réaliser le prototype final, avec un menu burger pour le mobile.
-  - Assurer la responsivité avec des @media queries et ajouter des animations CSS pour l'attractivité.
+### Tâches de Conception :
+- Création des wireframes pour structurer les pages.
+- Développement de maquettes pour les écrans de bureau et mobiles.
+- Prototype final avec menu burger pour mobile.
+- Responsive design et animations CSS.
 
-- **Tâches de Développement** :
-  - Organiser des sessions de Planning Poker pour estimer les tâches.
-  - Gérer les tâches via GitHub Projects.
-  - Transformer les maquettes en pages web fonctionnelles avec HTML et CSS.
-  - Intégrer une pagination sur la page Destinations avec 4 éléments par page.
-  - Assurer l'esthétique, la fonctionnalité et la réactivité des pages.
-  - Valider le code avec les normes W3C et utiliser le branching pour la gestion du code.
-  - Déployer le site sur GitHub Pages ou Vercel.
+### Tâches de Développement :
+- Organisation des sessions **Planning Poker** pour estimer les tâches.
+- Transformation des maquettes en pages web fonctionnelles.
+- Pagination sur la page Destinations avec 4 éléments par page.
+- Validation W3C et respect des normes SEO.
 
-- **Tâches Générales** :
-  - Garantir la conformité aux normes d'accessibilité.
-  - Optimiser le site pour le SEO.
-  - Maintenir un minimum de 4 pages.
-  - Présenter les réalisations lors de la session de débriefing.
-
-- **Tâches Bonus** :
-  - Ajouter des maquettes en mode tablette.
-  - Intégrer un carrousel d’images pour les Destinations, navigable sur mobile et sans bibliothèques JavaScript.
+### Tâches Générales :
+- Conformité aux normes d'accessibilité.
+- Minimum de 4 pages web.
+- Présentation lors de la session de débriefing.
 
 ## Écrans et Résolutions
 
-Le projet est optimisé pour les résolutions suivantes :
+Optimisation pour les résolutions suivantes :
 
-- **Mode Portrait** :
-  - Grand écran : à partir de 1280px de large
-  - Petit écran : de 1024px à 1279px
-  - Tablette portrait : de 768px à 1023px
-  - Mobile portrait : jusqu'à 767px
-  
-- **Mode Paysage** :
-  - Mobile paysage : de 768px à 1023px
-  - Tablette paysage : de 1024px à 1279px
+- **Grand écran** : 1280px et plus
+- **Petit écran** : 1024px à 1279px
+- **Tablette** : 768px à 1023px
+- **Mobile portrait** : jusqu'à 767px
 
 ## Démonstration
 
-> Le lien de la démo sera fourni ici une fois le site déployé sur GitHub Pages ou Vercel.
+- Le lien de démonstration : [VisitMorocco sur Vercel](https://brief-3-group-ace-ceu2.vercel.app/index.html)
+- Lien GitHub Pages : [VisitMorocco sur GitHub Pages](https://jad-bel.github.io/Brief-3-group-ACE/)
 
 ## Installation et Lancement
 
@@ -81,3 +73,4 @@ Pour configurer ce projet localement :
 
 1. Clonez le dépôt :
    ```bash
+   git clone https://github.com/Jad-Bel/Brief-3-group-ACE.git
