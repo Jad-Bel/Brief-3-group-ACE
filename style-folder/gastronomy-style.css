@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Nunito';
+    overflow-x: hidden;
+}
+header{
+    background-color: #EDE0D4;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    gap: 2vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header_logo{
+    width: 13vw;
+    height: auto;
+    object-fit: contain;
+}
+.searchbarInput{
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 20vw;
+    border-color: transparent;
+}
+
+.header_navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    list-style-type: none;
+}
+.header_navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.searchbarInput{
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 20vw;
+    border-color: transparent;
+}
+.hamburger{
+    display: none;
+}
+.search_icon{
+    display: none;
+}
+.intro_gastronomy{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15vh;
+    background-image: url('/image/gastronomyMain.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: inherit
+}
+
+.container_gastronomy{
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15vh;
+}
+.container_gastronomy span{
+    font-size: 8vw;
+    color: #EDE0D4;
+    font-family: 'Aclonica';
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+.containerDescription_gastronomy{
+    width: 90%;
+    max-width: 1000px;
+    background-color: #97633DBF;
+    padding: 2vw;
+    display: flex;             
+    align-items: center;
+    justify-content: center;
+}
+.containerDescription_gastronomy p{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.6;
+}
+/* slide part */
+.slider_container{
+    width: 100vw;
+    height: 80vh;
+}
+.slider_container h3{
+    display: none;
+}
+.spacingSliders1{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders2{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic2.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders3{
+    width: 100%;
+    height: 20vh;
+    background-image: url('/image/spacingPic3.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'aclonica';
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+}
+.spacingSliders1 span,.spacingSliders2 span{
+    color: white;
+    letter-spacing: 2vw;
+}
+
+
+
+@media (max-width:768px) {
+    /* header mobile */
+    .header_navbar{
+        display: none;
+    }
+    .searchbarInput{
+        display: none;
+    }
+    .hamburger{
+        position: relative;
+        width: 8vw;
+        display: block;
+        order: -1;
+    }
+    .hamburger[open] summary{
+        margin-top: 19vh;
+    }
+    .hamburger summary{ 
+        font-size: 8vw;
+        display: flex;
+        cursor: pointer;
+
+    }
+    .mobile_menu ul{
+        display: flex;
+        gap: 5vw;
+        padding-left: 10vw;
+        list-style: none;
+        padding-top: 10vw;
+    }
+    .mobile_menu a{
+        font-size: 3.5vw;
+        text-decoration: none;
+        color: black;
+    }
+    .header_logo{
+        order: 1;
+        height: 100%;
+        width: 40vw;
+    }
+    .search_icon{
+        display: block;
+        width: 5vw;
+        height: 5vh;
+        order: 2;
+    }
+    header{
+        height: auto;
+        padding: 2vh 5vw;
+
+    }
+    /* first section mobile */
+    .intro_gastronomy{
+        margin-top: 15vh;
+        height: auto;
+        max-height: 85vh;
+        background-size:fill;
+        background-position: center top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        padding: 5vh 0;
+    }
+    .container_gastronomy span{
+        margin-top: 20vh;
+        font-size: 12vw;
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    .containerDescription_gastronomy{
+        max-height: 30vh;
+    }
+    .containerDescription_gastronomy p{
+        font-size: 0.8em;
+    }
+
+}
+
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.modal {
+    background-color: white;
+    width: 100vw;
+    height:auto;
+    text-align: center;
+    position: relative;
+}
+
+
+.images {
+    position: relative;
+    width: 100vw; 
+    height: 80vh; 
+    max-height: 100vh; 
+    overflow: hidden;
+}
+
+
+[class*="slide-"] {
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity linear 0.2s;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.to-1:checked ~ .images .slide-1,
+.to-2:checked ~ .images .slide-2,
+.to-3:checked ~ .images .slide-3,
+.to-4:checked ~ .images .slide-4{
+    opacity: 1.0;
+}
+.to-5:checked ~ .images .slide-5,
+.to-6:checked ~ .images .slide-6,
+.to-7:checked ~ .images .slide-7,
+.to-8:checked ~ .images .slide-8 {
+    opacity: 1.0;
+}
+
+.dots {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1vh;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw; 
+    position: absolute;
+    right: 2vw;
+    bottom: 1vh;
+    z-index: 3;
+}
+
+
+.dots label {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.dots label:hover,
+.dots label:focus {
+    background-color: white;
+}
+
+
+.to-1:checked ~ .dots label[for="to-1"],
+.to-2:checked ~ .dots label[for="to-2"],
+.to-3:checked ~ .dots label[for="to-3"],
+.to-4:checked ~ .dots label[for="to-4"],
+.to-5:checked ~ .dots label[for="to-5"],
+.to-6:checked ~ .dots label[for="to-6"],
+.to-7:checked ~ .dots label[for="to-7"],
+.to-8:checked ~ .dots label[for="to-8"]{
+    background-color: white;
+}
+[class*="slide-"] img{
+    width: 100vw; 
+    height: 100%; 
+    overflow: hidden;
+}
+.slider_description {
+    position: absolute;
+    padding: 2vw;
+    bottom: 5vh;
+    left: 5vw;
+    font-size: clamp(5px, 2vw, 20px);
+    width: 40vw;
+    text-align: left;
+    background-color: #97633DBF;
+    color: white;
+}
+[class*="slide-"] span{
+    position: absolute;
+    font-size: 4vw;
+    bottom: 7vh;
+    right: 10vh;
+    color: white;
+    text-align: center;
+}
+.footer{
+    
+    margin-top: 140vh;
+    background-color:  #EDE0D4;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    overflow-x: hidden;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.footer_logo img{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 20vw;
+    height: auto;
+}
+.footer_logo::after,
+.footer_logo::before{
+    content: "";
+    flex: 1;
+
+    border-top: 1px solid black;
+
+}
+.spcfoter{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+}
+.ul_container ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ul_container ul li{
+    font-size: 1.8vw;
+}
+.copyright{
+    text-align: center;
+    padding: 2vw 2vh;
+ }
+.copyright p{
+    font-size: 1vw;
+}
