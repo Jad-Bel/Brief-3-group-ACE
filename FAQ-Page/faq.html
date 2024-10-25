@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="faq-style.css">
 </head>
 <body>
-    <header></header>
+    
+    <header>
+        <!-- Desktop part -->
+        <img class="header_logo" src="/image/Logo1.png" alt="visit Morocco logo">
+        <nav class="header_navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="destination.html">Destinations</a>
+                </li>
+                <li>
+                    <a href="#">Gastronomy</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <input class="searchbarInput" type="text" placeholder="Search...">
+        <!-- mobile part -->
+        <details class="hamburger">
+            <summary>&#9776;</summary>
+        <!-- after clicking the hamburger -->
+            <nav class="mobile_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Gastronomy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </details>
+        <img class="search_icon" src="/image/search-icon.svg" alt="Search">
+    </header>
+
     <!-- Page FAQ -->
     <section class="faq-page">
         <h1 class="titre-faq">Frequently Asked  Questions</h1>
@@ -94,14 +130,13 @@
             <input id="email" type="email" placeholder="ex:name@gmail.com" required>
 
             <label class="message-label" for="message">Message</label>
-            <input id="message" type="text" placeholder="Message" required>
+            <input id="message" type="text"  placeholder="Message" required>
 
             <div class="submit-parent">
                 <input class="submit-form" type="submit" value="SEND">
             </div>
         </form>
     </section>
-    
-    
+  
 </body>
 </html>
