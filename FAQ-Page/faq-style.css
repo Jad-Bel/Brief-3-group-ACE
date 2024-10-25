@@ -39,7 +39,7 @@ body {
     .faq-page .plan-questions{
         color: white;
         width: 72vw;
-        height: 70vw;
+        height: auto;
         padding: 10vw 0;
         display: flex;
         flex-direction: column;
@@ -54,14 +54,19 @@ body {
 
     }
 
-    .faq-page .plan-questions details{
-        padding-bottom: 3vw;
+    .faq-page .Question{
+        padding: 3vw 0 2vw;
         border-bottom: 0.2vw solid #edcbab;
         box-shadow: 0 1px #b18f6e;
+        display: flex;
+        justify-content: space-between;
+        
     }
 
+  
     .faq-page .plan-questions summary{
         cursor: pointer;
+        list-style: none;
     }
 
 
@@ -78,13 +83,12 @@ body {
 
     .form-contact input{
         background-color: #EDE0D4;
-        width: 45.5vw;
-        height: 7vw;
-        font-size: 2.7vw;
+        width: 40vw;
+        height: 6vw;
+        font-size: 2vw;
         border: none;
         border-radius: 1vw;
         padding: 0 2.6vw;
-        margin: 1vw 0 3vw;
         
     }    
     
@@ -95,12 +99,12 @@ body {
 
 
     
-    /* PARTIE DISKDOP */
+    /* PARTIE DISKTOP */
 
     @media (min-width: 768px) {
         .form-contact{
             background-color: white;
-            width: 90vw;
+            width: 80vw;
             height: auto;
             padding: 3.2vw 4.5vw 2.6vw;
             row-gap: 0.88vw;
