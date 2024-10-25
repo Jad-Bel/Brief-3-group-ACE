@@ -1,63 +1,84 @@
 @media(max-width:412px) {
-    .navbar {
-        display: flex;
-        justify-content: center;
-        height: 8vh;
-        width: 100%;
-    }
-
-    .logo-container img {
-        height: 130px;
-    }
-
-    .navbar-links {
+    .header_navbar{
         display: none;
     }
-
-    .search input {
+    .searchbarInput{
         display: none;
     }
-
-    body {
-        background-image: url(/img_mobail/Design\ sans\ titre\ \(5\).png);
+    header input{
+        display: block;
+    
+    }
+    header label{
+        display:block;
+    }
+    .mobile_menu2{
+        display: block;
+    }
+    .fa-bars:before{
+        display: block;
+    }
+    .mobile_menu2{
+        display: block;
+        background-color:rgba(250, 235, 215, 0.599);
+        line-height: 5vh;
+        display: none;
+        position: absolute;
+        top: 59px;
+        width: 30vh;
+        left:0;
+    }
+    .mobile_menu2 ul{
+        display: block;
+    list-style: none;
+    }
+    .mobile_menu2 ul li a{
+        margin-right: 40px;
+        text-decoration: none;
+        color: black;
+    }
+    input[type="radio"]{
+        display: none;
+    }
+    
+    input[type="radio"][id="menu"]:checked ~ .mobile_menu2{
+        display: block;
+    }
+    .header_logo{
+        order: 1;
+        width: 40vw;
+    }
+    .icon{
+        display: block;
+        width: 5vw;
+        height: 5vh;
+        order: 2;
+    }
+    header{
+        position: relative;
+        height: 10vh;
+        padding: 2vh 5vw;
     }
 
     .destination-header {
         height: 65vh;
-        font-size: 40px;
+        font-size: 36px;
     }
-    .hamburger summary{ 
-        font-size: 8vw;
-        display: flex;
-        cursor: pointer;
 
-    }
-    .mobile_menu ul{
-        display: flex;
-        gap: 5vw;
-        padding-left: 10vw;
-        list-style: none;
-        padding-top: 10vw;
-    }
-    .mobile_menu a{
-        font-size: 3.5vw;
-        text-decoration: none;
-        color: black;
-    }
 
     .section-marrakech {
         border: none;
         width: 100%;
         height: 60vh;
-        background-image: url(/img_mobail/Design\ sans\ titre\ \(6\).png);
+        background-image: url(/img_mobail/cafe-fna_m.png);
     }
 
     .city-header-marrakech {
-        width: 30vh;
+        width: 35vh;
     }
 
     .city-header-marrakech div {
-        font-size: 9px;
+        font-size: 8px;
         height: 3vh;
         width: 10vh;
     }
@@ -65,17 +86,17 @@
     .description-marrakech {
         padding: 1vh;
         padding: 3vh;
-        font-size: 1.2vh;
+        font-size: 1.1vh;
         width: 35vh;
         height: 25vh;
     }
 
     .learn-more {
-        width: 30vh;
+        width: 35vh;
         margin-top: 20px;
     }
     .learn-more div {
-        font-size: 10px;
+        font-size: 8px;
         height: 3vh;
         width: 10vh;
     }
@@ -83,20 +104,20 @@
         border: none;
         width: 100%;
         height: 60vh;
-        background-image: url(/img_mobail/Design\ sans\ titre.png);
+        background-image: url(/img_mobail/mosquèe-Hassan_m.png);
     }
     .city-header-rabat {
         width: 35vh;
     }
     .section-rabat h3 {
-        font-size: 10px;
+        font-size: 9px;
         height: 3vh;
         width: 10vh;
     }
     .description-rabat {
         padding: 1vh;
         padding: 3vh;
-        font-size: 1.2vh;
+        font-size: 1vh;
         width: 35vh;
         height: 25vh;
     
@@ -106,7 +127,7 @@
         border: none;
         width: 100%;
         height: 60vh;
-        background-image: url(/img_mobail/Design\ sans\ titre\ \(1\).png);
+        background-image: url(/img_mobail/chefchaouen_m.png);
     }
     
     .city-header-chefchaouen {
@@ -114,7 +135,7 @@
     }
     
     .city-header-chefchaouen div {
-        font-size: 10px;
+        font-size: 7px;
         height: 3vh;
         width: 10vh;
     }
@@ -122,7 +143,7 @@
     .description-chefchaouen {
         padding: 1vh;
         padding: 3vh;
-        font-size: 1.2vh;
+        font-size: 1.1vh;
         width: 35vh;
         height: 25vh;
     
@@ -135,7 +156,7 @@
     }
     
     .learn-more-ch div {
-        font-size: 10px;
+        font-size: 8px;
         height: 3vh;
         width: 10vh;
     }
@@ -144,7 +165,7 @@
         border: none;
         width: 100%;
         height: 60vh;
-        background-image: url(/img_mobail/Design\ sans\ titre\ \(2\).png);
+        background-image: url(/img_mobail/merzouga_m.png);
     }
     
     .section-merzouga h3 {
@@ -158,7 +179,7 @@
     
     .city-header-merzouga div {
         background: none;
-        font-size: 10px;
+        font-size: 8px;
         width: 10vh;
         height: 3vh;
         border-radius: 2em;
@@ -167,7 +188,7 @@
     .description-merzouga {
         padding: 1vh;
         padding: 3vh;
-        font-size: 1.2vh;
+        font-size: 1.05vh;
         width: 35vh;
         height: 25vh;
     
@@ -202,6 +223,7 @@
     }
     
     .spcfoter{
+        font-size: 1.3vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     }
@@ -239,12 +261,14 @@
     
     }
     .copyright{
+        font-size: 1.2vh;
        text-align: center;
        padding: 5% 12% 0% ;
     
     }
     
     .spcfoter{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     }
@@ -258,30 +282,6 @@
     .spcfot3{
     grid-column: 3/4;
     }
-    .hamburger{
-        position: relative;
-        width: 8vw;
-        
-        display: block;
-        order: -1;
-    }
-    .hamburger summary{ 
-        margin-left: -10vh;
-        font-size: 8vw;
-        display: flex;
-        cursor: pointer;
-
-    }
-    .mobile_menu ul{
-        display: flex;
-        gap: 5vw;
-        padding-left: 10vw;
-        list-style: none;
-        padding-top: 10vw;
-    }
-    .mobile_menu a{
-        font-size: 3.5vw;
-        text-decoration: none;
-        color: black;
-    }
 }
+
+/* test */
