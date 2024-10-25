@@ -64,7 +64,7 @@ body {
     justify-content: space-around;
 }
 .content div img{
-    height: 70vh;
+    height: 54vh;
 }
 .content div p{
     width: 110vh;
@@ -125,7 +125,7 @@ body {
 }
 .footer{
 
-    background-color:  #D9D9D9;
+    background-color:  #EDE0D4;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1%;
