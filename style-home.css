@@ -113,6 +113,7 @@ header{
 .introduction-content {
     width: 100%;
     background-image: url(image/Home-Page-Intro.png);
+    background-size: auto 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
@@ -149,7 +150,7 @@ header{
 .about-container {
     background: whitesmoke;
     width: 100%;
-    height: 150vh;
+    height: 50rem;
 }
 
 
@@ -226,7 +227,7 @@ header{
 
 @media (max-width: 768px) {
     .about-container {
-        height: 80vh;
+        height: 60rem;
     }
     .about-content {
         display: flex;
@@ -234,6 +235,7 @@ header{
         align-items: center;
         justify-content: center;
         gap: 30px;
+        border: 1px solid red;
     }
     .about-title {
         width: 100%;
@@ -253,9 +255,8 @@ header{
 /* section 3 */
 
 .traditional-section{
-    width: 100%;
-    /* height: 100vh; */
     background-image: url(image/gastronomie-sec-img.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center; 
@@ -276,11 +277,11 @@ header{
     font-family: 'aclonica';
 }
 
-a .traditional-btn {
+.btn-container {
     color: #EDE0D4;
     background-color: rgba(127, 85, 57, 0.237);
     height: 3.5rem;
-    width: 150%;
+    width: 20%;
     border-radius: 30px; 
     margin-top: 30px;
     border: 1px solid #7F5539;
@@ -289,30 +290,51 @@ a .traditional-btn {
     transition: all 0.2s ease-in-out;
 }
 
-a .traditional-btn:hover {
+a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #cdcdcd;
+    
+}
+
+.btn-container:hover {
     transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
     .traditional-section{
-        width: 100%;
-        height: auto;
         background-image: url(image/gastronomy-sec-v-mobile.png);
         background-repeat: no-repeat;
+        background-size: cover;
         object-fit: cover;
         background-position: center;
-        margin-top: -200px;
+        margin-top: 0;
+        height: auto;
+        padding-bottom: 20px;
     }
     .traditional-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 50rem;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid blue;
     }
     .traditional-content h4 {
         font-size: 3rem;
+        margin-bottom: 10px;
     }
     .btn-container {
-        margin-right: 75px;
+        margin: 20px auto 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
