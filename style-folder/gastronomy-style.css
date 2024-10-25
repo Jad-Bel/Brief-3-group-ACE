@@ -61,7 +61,7 @@ header{
     width: 100vw;
     height: 100vh;
     margin-top: 15vh;
-    background-image: url('/gastronomie-image/gastronomyMain.jpg');
+    background-image: url('../gastronomie-image/gastronomyMain.jpg');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -115,7 +115,7 @@ header{
 .spacingSliders1{
     width: 100%;
     height: 20vh;
-    background-image: url('/gastronomie-image/spacingPic.png');
+    background-image: url('../gastronomie-image/spacingPic.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -128,7 +128,7 @@ header{
 .spacingSliders2{
     width: 100%;
     height: 20vh;
-    background-image: url('/gastronomie-image/spacingPic2.png');
+    background-image: url('../gastronomie-image/spacingPic2.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -141,7 +141,7 @@ header{
 .spacingSliders3{
     width: 100%;
     height: 20vh;
-    background-image: url('/gastronomie-image/spacingPic2.png');
+    background-image: url('../gastronomie-image/spacingPic2.png');
     background-size: cover;
     background-position: center center;
     display: flex;
