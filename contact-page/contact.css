@@ -1,0 +1,62 @@
+.div1{
+    background-color: #B08968;
+    padding-bottom: 2%;
+    
+}
+.div2 {
+    padding: 3%;
+    border-radius: 1%;
+    background-color: white;
+    margin: 5%;
+    display: grid;
+    gap: 7%;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: repeat(5,1fr);
+   
+}
+.h1{
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    margin-left: 5%;
+    padding-top: 3%;
+}
+
+.division1{
+    grid-column: 1 / 2; 
+    grid-row: 1 / 4;
+   
+}
+
+
+.mesage{
+    
+    grid-column: 1/3; 
+    grid-row: 4 / 5;
+    height:200% ;
+    background-color: #EDE0D4;
+    border-radius: 36px;
+    text-align: center;
+    
+    
+}
+.mesage::placeholder {
+    color: white;
+}
+.send{
+   color: #7F5539;
+    grid-column: 2/3; 
+    grid-row: 5 / 6;
+    margin-left: 70%;
+    background-color: #EDE0D4;
+    margin-top: 10%;
+    height: 60%;
+    width: 30%;
+    border-radius: 36px;
+}
+.background{
+    border-radius: 35px;
+    background-color: #EDE0D4;
+}
+.background::placeholder {
+    color: white;
+}
