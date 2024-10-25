@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /* list-style: none; */
     box-sizing: border-box;
 
 }
@@ -28,7 +27,7 @@ header{
     gap: 2vw;
 }
 .header_logo{
-    width: 20vw;
+    width: 10rem;
     height: auto;
     object-fit: contain;
     transition: all 0.2s ease-in-out;

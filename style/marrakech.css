@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,6 +15,7 @@ body {
 
 .destination-header {
     color: #e6ccb2f1;
+    font-family: 'aclonica';
     text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column-reverse;
@@ -21,31 +23,35 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 90px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.59);
 }
 .destination-header div{
- width: 90%;
- height: 8Vh;
- margin-bottom: 30vh;
+     width: 90%;
+     height: 10rem;
+     display: flex;
+     align-items: center;
 }
+
 .destination-header div div{
     border: #e6ccb2f1 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20Px;
+    border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.59);
-    width: 20vh;
-    height: 5vh;
-    font-size: 4vh;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    font-family: 'nunito';
 }
 .destination-header div div a{
     text-decoration: none;
     color: #e6ccb2f1;
 }
 .container{
-    padding-top: 30vh;
     width: 100%;
-    height: 110vh;
+    height: 25rem;
+    font-family: 'nunito';
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,6 +61,7 @@ body {
     font-size: 4vh;
     width: 90vh;
 }
+
 .container {
     padding-top: 30vh;
     width: 100%;
@@ -71,7 +78,6 @@ body {
 }
 
 .content {
-    /* padding-top: 30vh; */
     width: 100%;
     height: 110vh;
     display: flex;
@@ -85,6 +91,7 @@ body {
 
 .content div p {
     width: 90vh;
+    font-family: 'nunito';
 }
 
 .H2 {
@@ -92,21 +99,22 @@ body {
 }
 
 .H2 h2 {
-    font-size: 8vh;
+    font-size: 2.5rem;
     color: #B08968;
     text-align: center;
+    font-family: 'aclonica';
 }
 
 .content div h3 {
     text-align: center;
     color: #B08968;
-    font-size: 6vh;
-    padding-bottom: 3vh;
+    font-size: 2rem;
+    font-family: 'aclonica';
 }
 
 .content div p {
     font-size: 3.5vh;
-    line-height: 4ch;
+    line-height: 1.9rem;
     width: 100vh;
     margin-bottom: 15vh;
 }
@@ -149,7 +157,7 @@ body {
 }
 
 .footer {
-
+    font-family: 'nunito';
     background-color: #EDE0D4;
     padding-left: 10%;
     padding-right: 10%;
@@ -159,7 +167,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 112%;
+    
 }
 
 .logo img {
