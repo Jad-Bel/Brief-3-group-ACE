@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisitMorocco</title>
+    <link rel="stylesheet" href="faq-style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- Desktop part -->
+        <img class="header_logo" src="/image/Logo1.png" alt="visit Morocco logo">
+        <nav class="header_navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="destination.html">Destinations</a>
+                </li>
+                <li>
+                    <a href="#">Gastronomy</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <input class="searchbarInput" type="text" placeholder="Search...">
+        <!-- mobile part -->
+        <details class="hamburger">
+            <summary>&#9776;</summary>
+        <!-- after clicking the hamburger -->
+            <nav class="mobile_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Gastronomy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </details>
+        <img class="search_icon" src="/image/search-icon.svg" alt="Search">
+    </header>
+
+    <!-- Page FAQ -->
+    <section class="faq-page">
+        <h1 class="titre-faq">Frequently Asked  Questions</h1>
+        <div class="plan-questions">
+            <div class="Question">
+                <details  >
+                    <summary >1. Le site est-il disponible en plusieurs langues ?</summary>
+                    <P>
+                        Oui, notre site est disponible en plusieurs langues, notamment en français,
+                        anglais, espagnol, et arabe. Vous pouvez changer la langue en haut à droite
+                        de la page ou dans le menu.
+                    </P>
+                </details>
+            </div>
+            <div class="Question">
+                <details >
+                    <summary>2. Puis-je laisser un avis ou partager mon expérience sur le site ?</summary>
+                    <P>
+                        Bien sûr ! Après votre voyage ou activité, vous recevrez un lien pour laisser 
+                        un avis. Vous pouvez également partager votre expérience directement sur notre 
+                        site ou sur nos réseaux sociaux.
+                    </P>
+                </details>
+            </div>
+            <div class="Question">
+                <details>
+                    <summary>3. Comment savoir si une activité est adaptée aux familles ou aux enfants ?</summary>
+                    <P>
+                        Sur chaque page d’activité ou de séjour, vous trouverez une section
+                        indiquant les âges recommandés et les éventuelles restrictions.
+                        Vous pouvez aussi filtrer les activités adaptées aux familles via le
+                        moteur de recherche.
+                    </P>
+                </details>
+            </div>
+
+            <div class="Question">
+                <details>
+                    <summary>4. Que faire si le site ne fonctionne pas correctement ?</summary>
+                    <P>
+                        Oui, notre site est disponible en plusieurs langues, notamment en français,
+                        anglais, espagnol, et arabe. Vous pouvez changer la langue en haut à droite
+                        de la page ou dans le menu.
+                    </P>
+                </details>
+            </div>
+            <div class="Question">
+                <details>
+                    <summary>5. Que faire si je ne trouve pas l’information que je cherche </summary>
+                    <P>
+                        Si vous rencontrez des problèmes techniques, essayez d'actualiser
+                        la page ou de vider le cache de votre navigateur. Si le problème 
+                        persiste, contactez notresupport via le formulaire de contact.
+                    </P>
+                </details>
+            </div>
+            <div class="Question">
+                <details>
+                    <summary>6. Le site fonctionne-t-il sans connexion Internet </summary>
+                    <P>
+                        Une connexion Internet est nécessaire pour naviguer et effectuer 
+                        des réservations. Cependant, après avoir réservé, vous pouvez
+                        télécharger certains documents, comme vos billets ou
+                        itinéraires, pour un usage hors ligne. 
+                    </P>
+                </details>
+            </div>
+            
+            
+        </div>
+    </section>
+    <!-- Page Contacte -->
+    <section class="contact-page">
+        <h1 class="titre-faq">Contact Us</h1>
+        <form class="form-contact">
+
+            <label for="name">User Name</label>
+            <input id="name" type="text" placeholder="Name" required>
+            
+            <label for="phone">Phone Numde</label>
+            <input id="phone" type="number" placeholder="ex:0123456789"  required>
+            
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="ex:name@gmail.com" required>
+
+            <label class="message-label" for="message">Message</label>
+            <input id="message" type="text"  placeholder="Message" required>
+
+            <div class="submit-parent">
+                <input class="submit-form" type="submit" value="SEND">
+            </div>
+        </form>
+    </section>
+  
+</body>
+</html>
